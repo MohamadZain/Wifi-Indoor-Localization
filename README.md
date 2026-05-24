@@ -4,9 +4,9 @@ Machine learning–based indoor localization system using WiFi fingerprinting an
 
 ## Overview
 
-This project predicts indoor building location, floor level, and physical coordinates using WiFi RSSI fingerprint data collected from multiple wireless access points.
+The goal of the project is to predict indoor building location, floor level, and physical coordinates using WiFi RSSI fingerprint data collected from multiple wireless access points.
 
-The project compares multiple machine learning models for both classification and regression tasks in indoor positioning environments where GPS signals are unreliable.
+The project also compares multiple machine learning models for both classification and regression tasks in indoor positioning environments where GPS signals are unreliable.
 
 ## Features
 
