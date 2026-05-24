@@ -63,7 +63,8 @@ Random Forest achieved the best classification performance with 99.5% building a
 
 For coordinate prediction, Gradient Boosting achieved the lowest positioning error with an RMSE of 8.7 meters, making it the strongest regression model in this project.
 
-The results show that ensemble-based approaches handled noisy WiFi RSSI data more effectively than simpler baseline models.
+The results show that advanced models such as Random Forest and Gradient Boosting performed better than simpler baseline models on noisy WiFi signal data.
+
 ## Dataset
 
 UJIIndoorLoc Dataset:
