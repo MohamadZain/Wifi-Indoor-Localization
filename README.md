@@ -43,27 +43,27 @@ The histogram below shows the distribution of WiFi RSSI signal strengths across 
 
 ### Classification Results
 
-| Model         | Building Accuracy | Floor Accuracy | Precision | F1 Score |
-| ------------- | ----------------- | -------------- | --------- | -------- |
-| KNN           | 98.2%             | 84.1%          | 0.831     | 0.836    |
-| Decision Tree | 97.6%             | 80.3%          | 0.798     | 0.800    |
-| Random Forest | 99.5%             | 89.3%          | 0.889     | 0.891    |
+| Model | Building Accuracy | Floor Accuracy | Combined Accuracy | Precision | F1 Score |
+|---------|---------|---------|---------|---------|---------|
+| KNN | 99.10% | 80.38% | 80.11% | 81.84% | 80.62% |
+| Decision Tree | 92.62% | 59.59% | 57.61% | 67.10% | 60.33% |
+| Random Forest | 100.00% | 90.64% | 90.64% | 91.21% | 90.63% |
 
 ### Regression Results
 
-| Model             | RMSE (m) | MAE (m) | R²   |
-| ----------------- | -------- | ------- | ---- |
-| Linear Regression | 23.4     | 17.8    | 0.61 |
-| MLP Regressor     | 10.2     | 7.6     | 0.87 |
-| Gradient Boosting | 8.7      | 6.3     | 0.91 |
+| Model | RMSE (m) | MAE (m) | R² |
+|---------|---------|---------|---------|
+| Linear Regression | 47.38 | 32.70 | 0.772 |
+| MLP Regressor | 17.12 | 9.86 | 0.967 |
+| Gradient Boosting | 22.06 | 14.13 | 0.947 |
 
 ## Best Performing Models
 
-Random Forest achieved the best classification performance with 99.5% building accuracy and 89.3% floor accuracy, outperforming KNN and Decision Tree models.
+Random Forest achieved the strongest classification performance, reaching 100% building accuracy, 90.64% floor accuracy, and 90.64% combined accuracy. It also achieved a floor-level precision of 91.21% and an F1 score of 90.63%, outperforming both KNN and Decision Tree models.
 
-For coordinate prediction, Gradient Boosting achieved the lowest positioning error with an RMSE of 8.7 meters, making it the strongest regression model in this project.
+For coordinate prediction, the MLP Regressor achieved the best overall performance with the lowest prediction error (RMSE = 17.12 m, MAE = 9.86 m) and the highest R² score of 0.967, indicating strong predictive accuracy for indoor coordinate estimation.
 
-The results show that advanced models such as Random Forest and Gradient Boosting performed better than simpler baseline models on noisy WiFi signal data.
+The results show that advanced machine learning models such as Random Forest and MLP Regressor performed significantly better than baseline approaches for indoor localization using WiFi fingerprint data.
 
 ## Dataset
 
